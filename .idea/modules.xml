@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/Cruds.iml" filepath="$USER_HOME$/Cruds.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Dianome-sistematozacao.iml" filepath="$PROJECT_DIR$/../Dianome-sistematozacao.iml" />
     </modules>
   </component>
 </project>

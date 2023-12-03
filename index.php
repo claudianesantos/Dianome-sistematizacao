@@ -10,16 +10,21 @@ if (isset($_POST['submit']))
        $Telefone = $_POST['Telefone'];
        $sexo = $_POST['genero'];
        $data_nasc = $_POST['data_nascimento'];
-       $endereço = $_POST['endereço'];
-       $parcela = $_POST['parcela'];
-       $valor = $_POST['valor'];
-
-       $result = mysqli_query($conexao, "INSERT INTO usuario(nome,CPF,Telefone,sexo,data_nasc,endereço,valor,parcela)
-    VALUES ('$nome','$CPF','$Telefone','$sexo','$data_nasc','$cidade','$valor', '$parcela')");
+       $endereco = $_POST['endereço'];
+       $capacidade = $_POST['capacidade'];
 
 
+       $result = mysqli_query($conexao, "INSERT INTO usuario(nome,CPF,Telefone,sexo,data_nasc,endereco,capacidade)
+    VALUES ('$nome','$CPF','$Telefone','$sexo','$data_nasc','$endereco', '$capacidade'");
 
+       if ($result) {
+         echo "Dados inseridos com sucesso";
+       } else {
+         echo "Falha ao inserir dados: " . mysqli_error($conexao);
+       }
      }
+
+
 
 ?>
 
@@ -138,14 +143,10 @@ if (isset($_POST['submit']))
       <label for="data_nascimento"><b>Data de Nascimento:</b></label>
       <input type="date" name="data_nascimento" id="data_nascimento" required>
       <br><br><br>
-      <div class="inputBox">
-        <input type="text" name="valor" id="valor" class="inputUser" required>
-        <label for="valor" class="labelInput">valor</label>
-      </div>
       <br><br>
       <div class="inputBox">
-        <input type="text" name="parcela" id="parcela" class="inputUser" required>
-        <label for="parcela" class="labelInput">parcela</label>
+        <input type="text" name="capacidade" id="capacidade" class="inputUser" required>
+        <label for="capacidade" class="labelInput">capacidade</label>
       </div>
       <br><br>
       <div class="inputBox">
