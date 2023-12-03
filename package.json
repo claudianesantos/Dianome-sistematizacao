@@ -5,7 +5,7 @@
   "keywords": "",
   "license": "",
   "author": "",
-  "scripts":
+  "scripts": {
     "build": "parcel build index.php",
     "dev": "parcel index.php --open",
     "start": "npm run build && npm run dev",
