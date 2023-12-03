@@ -96,7 +96,7 @@ if (isset($_POST['submit']))
       font-size: 15px;
     }
     #submit{
-      background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+      background-image: linear-gradient(to right,rgb(12, 23, 200), rgb(90, 20, 220));
       width: 100%;
       border: none;
       padding: 15px;
